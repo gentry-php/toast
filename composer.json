@@ -1,0 +1,13 @@
+{
+    "name": "gentry/toast",
+    "description": "Toast templates for Gentry",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marijn Ophorst",
+            "email": "marijn@monomelodies.nl"
+        }
+    ],
+    "require": {}
+}
