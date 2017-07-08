@@ -4,10 +4,11 @@
 namespace {{ namespace }};
 
 use Generator;
-
 {% endif %}
-/** Test for {{ feature }} */
-return function () : Generator {
+use Gentry\Gentry\Wrapper;
 
+/** Testsuite for {{ objectUnderTest }} */
+return function () : Generator {
+{% block testGroup %}{% endblock testGroup %}
 };
 
