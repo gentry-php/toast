@@ -2,7 +2,7 @@
         /** {{ call.name }} yields {{ call.expectedResult | raw }} */
         yield function () use ($object) {
             $result = $object->{{ call.name }}({{ call.parameters | raw }});
-            yield assert($result == {{ call.expectedResult | raw }});
+            assert($result == {{ call.expectedResult | raw }});
         };
 {% endfor %}
 
