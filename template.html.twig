@@ -3,10 +3,7 @@
 {% block testGroup %}
     $object = Wrapper::createObject({{ objectUnderTest }}::class);
 {% for name, feature in features %}
-    /** Test {{ name }} */
-    yield function () use ($object) : Generator {
 {% include 'feature.html.twig' with {feature: feature} %}
-    };
 {% endfor %}
 {% endblock testGroup %}
 
