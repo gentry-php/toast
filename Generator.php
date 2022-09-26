@@ -13,7 +13,7 @@ class Generator extends Gentry\Generator
 
     protected function getTemplatePath() : string
     {
-        return dirname(__DIR__);
+        return realpath(__DIR__);
     }
 }
 
