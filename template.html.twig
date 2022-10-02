@@ -1,7 +1,7 @@
 {% extends 'suite.html.twig' %}
 
 {% block testGroup %}
-    $object = new Wrapper({{ objectUnderTest }}::class);
+    $object = new Wrapper(new {{ objectUnderTest }});
 {% for name, feature in features %}
 {% include 'feature.html.twig' with {feature: feature} %}
 {% endfor %}
